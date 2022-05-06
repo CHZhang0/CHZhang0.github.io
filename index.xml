@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My New Hugo Site</title>
+    <link>https://chzhang0.github.io/</link>
+    <description>Recent content on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 18 Nov 2021 10:36:11 +0800</lastBuildDate><atom:link href="https://chzhang0.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>First</title>
+      <link>https://chzhang0.github.io/post/blog/</link>
+      <pubDate>Thu, 18 Nov 2021 10:36:11 +0800</pubDate>
+      
+      <guid>https://chzhang0.github.io/post/blog/</guid>
+      <description>测试 你好
+新建博客目录 hugo new site hugoblog_name 下载主题 进入到hugoblog_name/themes
+git clone https://github.com/syui/hugo-theme-air 或
+git clone git://github.com/syui/hugo-theme-air 或
+git clone https://hub.fastgit.org/syui/hugo-theme-air 新建文章 在hugoblog_name目录下
+hugo new post/first.md 注意：需要把draft改为false
+配置nginx vi /etc/nginx/nginx.conf 修改user nginx;为user root
+修改配置文件 cd /etc/nginx/conf.d vi default.conf 在location大括号内，修改以下内容
+location / { #将该路径替换为您的网站根目录。 root /root/hugoblog_name/public/; #添加默认首页信息 index index.html index.htm; } 打包操作 hugo --baseUrl=&amp;#34;/&amp;#34; 若是public文件夹中未生成html文件，使用
+hugo --theme=&amp;#39;themename&amp;#39; hugo就会把你的站点生成纯静态页面，然后打包到public文件夹
+重启nginx systemctl restart nginx.service 添加新的博客后刷新 hugo 启动Nginx服务 systemctl start nginx 设置Nginx服务开机自启动 systemctl enable nginx 永久关闭防火墙 systemctl disable firewalld 查看当前防火墙的状态 systemctl status firewalld </description>
+    </item>
+    
+  </channel>
+</rss>
