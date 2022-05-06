@@ -17,7 +17,7 @@
 hugo new site myblog 下载并设置主题 ... Git需配置环境变量 ... 利用git进行clone 在D:\Hugo\Blog\myblog下
 git clone https://github.com/vaga/hugo-theme-m10c.git themes/m10c 在根目录下把博客在本地启动起来 hugo server -t m10c --buildDrafts 新建一篇文章(在content/post分类下新建) hugo new post/blog.md new repository新建repository仓库 部署至GitHub服务器上 执行
 hugo --theme=m10c --baseUrl=&amp;#34;https://chzhang0.github.io/&amp;#34; --buildDrafts 生成public文件夹
-将public文件夹传至GitHub服务器上 cd public git init 所有东西均上传 git add . 提交信息 git commit -m &amp;#34;我的 hugo 博客第一次提交&amp;#34; 将本地的public文件夹跟GitHub仓库进行关联 git remote add origin https://github.com/CHZhang0/chzhang0.github.io.git 将pubic推到仓库上去 git push -u origin master Github token: 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 修改现有项目的url(使用token登录) git remote set-url origin https://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@github.</description>
+将public文件夹传至GitHub服务器上 cd public git init 所有东西均上传 git add . 提交信息 git commit -m &amp;#34;我的 hugo 博客第一次提交&amp;#34; 将本地的public文件夹跟GitHub仓库进行关联 git remote add origin https://github.com/CHZhang0/chzhang0.github.io.git 将public推到仓库上去 git push -u origin master 修改现有项目的url(使用token登录) Github token为自己Github账户生成的: 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 git remote set-url origin https://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@github.</description>
     </item>
     
     <item>

@@ -17,14 +17,14 @@
 hugo new site myblog 下载并设置主题 ... Git需配置环境变量 ... 利用git进行clone 在D:\Hugo\Blog\myblog下
 git clone https://github.com/vaga/hugo-theme-m10c.git themes/m10c 在根目录下把博客在本地启动起来 hugo server -t m10c --buildDrafts 新建一篇文章(在content/post分类下新建) hugo new post/blog.md new repository新建repository仓库 部署至GitHub服务器上 执行
 hugo --theme=m10c --baseUrl=&#34;https://chzhang0.github.io/&#34; --buildDrafts 生成public文件夹
-将public文件夹传至GitHub服务器上 cd public git init 所有东西均上传 git add . 提交信息 git commit -m &#34;我的 hugo 博客第一次提交&#34; 将本地的public文件夹跟GitHub仓库进行关联 git remote add origin https://github.com/CHZhang0/chzhang0.github.io.git 将pubic推到仓库上去 git push -u origin master Github token: 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 修改现有项目的url(使用token登录) git remote set-url origin https://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@github."/>
+将public文件夹传至GitHub服务器上 cd public git init 所有东西均上传 git add . 提交信息 git commit -m &#34;我的 hugo 博客第一次提交&#34; 将本地的public文件夹跟GitHub仓库进行关联 git remote add origin https://github.com/CHZhang0/chzhang0.github.io.git 将public推到仓库上去 git push -u origin master 修改现有项目的url(使用token登录) Github token为自己Github账户生成的: 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 git remote set-url origin https://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@github."/>
 
     <meta property="og:title" content="windows下配置hugo" />
 <meta property="og:description" content="下载最新版hugo https://github.com/gohugoio/hugo/releases hugo需配置环境变量 ... 生成博客根目录(myblog) 进入D:\Hugo\Blog下
 hugo new site myblog 下载并设置主题 ... Git需配置环境变量 ... 利用git进行clone 在D:\Hugo\Blog\myblog下
 git clone https://github.com/vaga/hugo-theme-m10c.git themes/m10c 在根目录下把博客在本地启动起来 hugo server -t m10c --buildDrafts 新建一篇文章(在content/post分类下新建) hugo new post/blog.md new repository新建repository仓库 部署至GitHub服务器上 执行
 hugo --theme=m10c --baseUrl=&#34;https://chzhang0.github.io/&#34; --buildDrafts 生成public文件夹
-将public文件夹传至GitHub服务器上 cd public git init 所有东西均上传 git add . 提交信息 git commit -m &#34;我的 hugo 博客第一次提交&#34; 将本地的public文件夹跟GitHub仓库进行关联 git remote add origin https://github.com/CHZhang0/chzhang0.github.io.git 将pubic推到仓库上去 git push -u origin master Github token: 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 修改现有项目的url(使用token登录) git remote set-url origin https://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@github." />
+将public文件夹传至GitHub服务器上 cd public git init 所有东西均上传 git add . 提交信息 git commit -m &#34;我的 hugo 博客第一次提交&#34; 将本地的public文件夹跟GitHub仓库进行关联 git remote add origin https://github.com/CHZhang0/chzhang0.github.io.git 将public推到仓库上去 git push -u origin master 修改现有项目的url(使用token登录) Github token为自己Github账户生成的: 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 git remote set-url origin https://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@github." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://chzhang0.github.io/post/third/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2022-05-06T20:48:23+08:00" />
@@ -94,11 +94,11 @@ hugo --theme=m10c --baseUrl=&#34;https://chzhang0.github.io/&#34; --buildDrafts 
 <pre tabindex="0"><code>git commit -m &#34;我的 hugo 博客第一次提交&#34;
 </code></pre><h1 id="将本地的public文件夹跟github仓库进行关联">将本地的public文件夹跟GitHub仓库进行关联</h1>
 <pre tabindex="0"><code>git remote add origin https://github.com/CHZhang0/chzhang0.github.io.git
-</code></pre><h1 id="将pubic推到仓库上去">将pubic推到仓库上去</h1>
+</code></pre><h1 id="将public推到仓库上去">将public推到仓库上去</h1>
 <pre tabindex="0"><code>git push -u origin master
-</code></pre><pre tabindex="0"><code>Github token: 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
 </code></pre><h1 id="修改现有项目的url使用token登录">修改现有项目的url(使用token登录)</h1>
-<pre tabindex="0"><code>git remote set-url origin https://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@github.com/chZhang0/chzhang0.github.io.git
+<pre tabindex="0"><code>Github token为自己Github账户生成的: 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
+</code></pre><pre tabindex="0"><code>git remote set-url origin https://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@github.com/chZhang0/chzhang0.github.io.git
 </code></pre><pre tabindex="0"><code>git push -u origin master
 </code></pre><h1 id="新发帖子">新发帖子</h1>
 <p>myblog根目录下</p>
