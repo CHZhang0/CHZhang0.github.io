@@ -102,6 +102,21 @@ cd public git init 所有东西均上传 git add . 提交信息 git commit -m &#
 </code></pre><h1 id="修改现有项目的url使用token登录">修改现有项目的url(使用token登录)</h1>
 <pre tabindex="0"><code>git remote set-url origin https://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@github.com/chZhang0/chzhang0.github.io.git
 </code></pre><pre tabindex="0"><code>git push -u origin master
+</code></pre><h1 id="新发帖子">新发帖子</h1>
+<p>myblog根目录下</p>
+<pre tabindex="0"><code>hugo new post/xxx.md
+hugo --theme=m10c --baseUrl=&#34;https://chzhang0.github.io/&#34; --buildDrafts
+cd public
+git add .
+git commit -m &#34;我的 hugo 博客第x次提交&#34;
+git push -u origin master
+</code></pre><h1 id="更改帖子改好后重新提交">更改帖子(改好后重新提交)</h1>
+<p>myblog根目录下</p>
+<pre tabindex="0"><code>hugo --theme=m10c --baseUrl=&#34;https://chzhang0.github.io/&#34; --buildDrafts
+cd public
+git add .
+git commit -m &#34;我的 hugo 博客第x次提交&#34;
+git push -u origin master
 </code></pre><hr>
 <h1 id="暂未用到">暂未用到</h1>
 <pre tabindex="0"><code>git pull origin master --allow-unrelated-histories(我第二次换主题的时候用了这个)
