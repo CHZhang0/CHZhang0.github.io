@@ -6,7 +6,34 @@
     <description>Recent content on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 May 2022 20:27:32 +0800</lastBuildDate><atom:link href="https://chzhang0.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 06 May 2022 20:48:23 +0800</lastBuildDate><atom:link href="https://chzhang0.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>windows下配置hugo</title>
+      <link>https://chzhang0.github.io/post/third/</link>
+      <pubDate>Fri, 06 May 2022 20:48:23 +0800</pubDate>
+      
+      <guid>https://chzhang0.github.io/post/third/</guid>
+      <description>https://github.com/gohugoio/hugo/releases 下载最新版
+hugo需配置环境变量
+进入D:\Hugo\Blog下
+生成博客根目录
+hugo new site myblog 下载并设置主题
+利用git进行clone git需配置环境变量
+在D:\Hugo\Blog\myblog下
+git clone https://github.com/vaga/hugo-theme-m10c.git themes/m10c 在根目录下把博客在本地启动起来
+hugo server -t m10c --buildDrafts 新建一篇文章(在content/post分类下新建)
+hugo new post/blog.md new repository新建repository仓库
+部署至GitHub服务器上
+hugo --theme=m10c --baseUrl=&amp;#34;https://chzhang0.github.io/&amp;#34; --buildDrafts 生成public文件夹
+将public文件夹传至GitHub服务器上
+cd public git init 所有东西均上传
+git add . 提交信息
+git commit -m &amp;#34;我的 hugo 博客第一次提交&amp;#34; 将本地的public文件夹跟GitHub仓库进行关联
+git remote add origin https://github.com/CHZhang0/chzhang0.github.io.git 将pubic推到仓库上去
+git push -u origin master Github token: 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 修改现有项目的url
+git remote set-url origin https://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@github.</description>
+    </item>
+    
     <item>
       <title>测试文件</title>
       <link>https://chzhang0.github.io/post/second/</link>
@@ -17,28 +44,6 @@
 Usage To run the code on MNIST and CIFAR-10 datasets, execute vision.py with desired parameters:
 python vision.py For the text classification model based on the AGNews Corpus:
 python main_text_class.py [experiment_name] [noise_std] [clip] python main_text_class.py sidp 0.3 7 Results MNIST    Privacy epsilon ∞ 7 3 1 0.5 0.1 0.05 0.025     DPSGD (LeNet5) 99.</description>
-    </item>
-    
-    <item>
-      <title>windows下配置hugo</title>
-      <link>https://chzhang0.github.io/post/first/</link>
-      <pubDate>Fri, 06 May 2022 20:14:15 +0800</pubDate>
-      
-      <guid>https://chzhang0.github.io/post/first/</guid>
-      <description>&amp;rsquo;&amp;rsquo;&#39; https://github.com/gohugoio/hugo/releases &amp;rsquo;&amp;rsquo;&#39; 下载最新版
-hugo需配置环境变量
-进入D:\Hugo\Blog下
-生成博客根目录 &amp;rsquo;&amp;rsquo;&#39; hugo new site myblog &amp;rsquo;&#39;&#39;
-下载并设置主题
-利用git进行clone git需配置环境变量
-在D:\Hugo\Blog\myblog下 &amp;rsquo;&amp;rsquo;&#39; git clone https://github.com/vaga/hugo-theme-m10c.git themes/m10c &amp;rsquo;&#39;&#39;
-在根目录下把博客在本地启动起来 &amp;rsquo;&amp;rsquo;&#39; hugo server -t m10c &amp;ndash;buildDrafts &amp;rsquo;&#39;&#39;
-新建一篇文章(在content/post分类下新建) &amp;rsquo;&amp;rsquo;&#39; hugo new post/blog.md &amp;rsquo;&#39;&#39;
-new repository新建repository仓库
-部署至GitHub服务器上
-&amp;rsquo;&amp;rsquo;&#39; hugo &amp;ndash;theme=m10c &amp;ndash;baseUrl=&amp;ldquo;https://chzhang0.github.io/&amp;quot; &amp;ndash;buildDrafts &amp;rsquo;&amp;rsquo;&#39; 生成public文件夹
-将public文件夹传至GitHub服务器上
-&amp;rsquo;&amp;rsquo;&#39; cd public &amp;rsquo;&amp;rsquo;&#39; &amp;rsquo;&amp;rsquo;&#39; git init &amp;rsquo;&amp;rsquo;&#39; 所有东西均上传 &amp;rsquo;&amp;rsquo;&#39; git add . &amp;rsquo;&amp;rsquo;&#39; 提交信息 &amp;rsquo;&amp;rsquo;&#39; git commit -m &amp;ldquo;我的 hugo 博客第一次提交&amp;rdquo; &amp;rsquo;&#39;&#39;</description>
     </item>
     
     <item>
