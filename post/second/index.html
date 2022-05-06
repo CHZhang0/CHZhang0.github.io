@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>测试文件 // My New Hugo Site</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.98.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="John Doe" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="https://chzhang0.github.io/css/main.min.88e7083eff65effb7485b6e6f38d10afbec25093a6fac42d734ce9024d3defbd.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="测试文件"/>
+<meta name="twitter:description" content="此篇仅为测试 SIDP The PyTorch implementation of &lsquo;Robust Differentially Private Training of Deep Neural Networks&rsquo;. https://arxiv.org/abs/2006.10919
+Usage To run the code on MNIST and CIFAR-10 datasets, execute vision.py with desired parameters:
+python vision.py For the text classification model based on the AGNews Corpus:
+python main_text_class.py [experiment_name] [noise_std] [clip] python main_text_class.py sidp 0.3 7 Results MNIST    Privacy epsilon ∞ 7 3 1 0.5 0.1 0.05 0.025     DPSGD (LeNet5) 99."/>
+
+    <meta property="og:title" content="测试文件" />
+<meta property="og:description" content="此篇仅为测试 SIDP The PyTorch implementation of &lsquo;Robust Differentially Private Training of Deep Neural Networks&rsquo;. https://arxiv.org/abs/2006.10919
+Usage To run the code on MNIST and CIFAR-10 datasets, execute vision.py with desired parameters:
+python vision.py For the text classification model based on the AGNews Corpus:
+python main_text_class.py [experiment_name] [noise_std] [clip] python main_text_class.py sidp 0.3 7 Results MNIST    Privacy epsilon ∞ 7 3 1 0.5 0.1 0.05 0.025     DPSGD (LeNet5) 99." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chzhang0.github.io/post/second/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-05-06T20:27:32+08:00" />
+<meta property="article:modified_time" content="2022-05-06T20:27:32+08:00" />
+
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://chzhang0.github.io/"><img class="app-header-avatar" src="/avatar.jpg" alt="John Doe" /></a>
+      <h1>My New Hugo Site</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula turpis sit amet elit pretium.</p>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">测试文件</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          May 6, 2022
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          1 min read
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <h1 id="此篇仅为测试">此篇仅为测试</h1>
+<h1 id="sidp">SIDP</h1>
+<p>The PyTorch implementation of &lsquo;Robust Differentially Private Training of Deep Neural Networks&rsquo;.
+<a href="https://arxiv.org/abs/2006.10919">https://arxiv.org/abs/2006.10919</a></p>
+<h2 id="usage">Usage</h2>
+<p>To run the code on <code>MNIST</code> and <code>CIFAR-10</code> datasets, execute <code>vision.py</code> with desired parameters:</p>
+<pre tabindex="0"><code>python vision.py 
+</code></pre><p>For the text classification model based on the AGNews Corpus:</p>
+<pre tabindex="0"><code>python main_text_class.py [experiment_name] [noise_std] [clip]
+python main_text_class.py sidp 0.3 7
+</code></pre><h2 id="results">Results</h2>
+<h4 id="mnist">MNIST</h4>
+<table>
+<thead>
+<tr>
+<th>Privacy epsilon</th>
+<th>∞</th>
+<th>7</th>
+<th>3</th>
+<th>1</th>
+<th>0.5</th>
+<th>0.1</th>
+<th>0.05</th>
+<th>0.025</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DPSGD (LeNet5)</td>
+<td>99.2</td>
+<td>97</td>
+<td>96.34</td>
+<td>94.11</td>
+<td>91.1</td>
+<td>83.0</td>
+<td>78.96</td>
+<td>31.56</td>
+</tr>
+<tr>
+<td>SI-DPSGD (LeNet5)</td>
+<td>99.2</td>
+<td>98.9</td>
+<td>98.9</td>
+<td>98.72</td>
+<td>99.1</td>
+<td>99.0</td>
+<td>98.84</td>
+<td>90.82</td>
+</tr>
+<tr>
+<td>SI-DPSGD (BN-LeNet5)</td>
+<td>99.2</td>
+<td>99.17</td>
+<td>99.17</td>
+<td>99.15</td>
+<td>99.18</td>
+<td>99.14</td>
+<td>99.12</td>
+<td>98.58</td>
+</tr>
+</tbody>
+</table>
+<h4 id="cifar-10">CIFAR-10</h4>
+<table>
+<thead>
+<tr>
+<th>Privacy epsilon</th>
+<th>∞</th>
+<th>8</th>
+<th>4</th>
+<th>2</th>
+<th>1</th>
+<th>0.5</th>
+<th>0.1</th>
+<th>0.05</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DPSGD (TF-tutorial)</td>
+<td>80.0</td>
+<td>73.0</td>
+<td>70.0</td>
+<td>67.0</td>
+<td>NA</td>
+<td>NA</td>
+<td>NA</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>SI-DPSGD (TF-tutorial)</td>
+<td>80.0</td>
+<td>78.10</td>
+<td>77.70</td>
+<td>76.0</td>
+<td>76.05</td>
+<td>74.20</td>
+<td>73.80</td>
+<td>74.05</td>
+</tr>
+<tr>
+<td>SI-DPSGD (ResNet-18)</td>
+<td>93.50</td>
+<td>90.20</td>
+<td>90.16</td>
+<td>90.26</td>
+<td>90.09</td>
+<td>89.67</td>
+<td>84.88</td>
+<td>84.47</td>
+</tr>
+</tbody>
+</table>
+<h4 id="agnews-text-classification">AGNews Text Classification</h4>
+<table>
+<thead>
+<tr>
+<th>Privacy epsilon</th>
+<th>∞</th>
+<th>7</th>
+<th>3</th>
+<th>1</th>
+<th>0.5</th>
+<th>0.1</th>
+<th>0.05</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DPSGD (BiLSTM-DL)</td>
+<td>88.5</td>
+<td>83.9</td>
+<td>80.0</td>
+<td>81.1</td>
+<td>77.9</td>
+<td>37.5</td>
+<td>31.8</td>
+</tr>
+<tr>
+<td>SI-DPSGD (BiLSTM-DL)</td>
+<td>88.5</td>
+<td>85.9</td>
+<td>85.7</td>
+<td>83.3</td>
+<td>81.2</td>
+<td>77.9</td>
+<td>56.7</td>
+</tr>
+<tr>
+<td>DPSGD (LN-BiLSTM-DL)</td>
+<td>88.5</td>
+<td>83.5</td>
+<td>82.4</td>
+<td>82.0</td>
+<td>78.9</td>
+<td>50.1</td>
+<td>31.6</td>
+</tr>
+<tr>
+<td>SI-DPSGD (LN-BiLSTM-DL)</td>
+<td>88.5</td>
+<td>87.8</td>
+<td>87.6</td>
+<td>85.7</td>
+<td>85.4</td>
+<td>84.3</td>
+<td>80.1</td>
+</tr>
+</tbody>
+</table>
+<h4 id="references">References</h4>
+<ul>
+<li>PyTorch implementation of DPSGD is taken from <a href="https://github.com/ebagdasa/pytorch-privacy">https://github.com/ebagdasa/pytorch-privacy</a>.</li>
+</ul>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>

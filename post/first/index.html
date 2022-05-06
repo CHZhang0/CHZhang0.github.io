@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en-us">
   <head>
-    <title>First // My New Hugo Site</title>
+    <title>windows下配置hugo // My New Hugo Site</title>
     <link rel="shortcut icon" href="/favicon.ico" />
     <meta charset="utf-8" />
     <meta name="generator" content="Hugo 0.98.0" />
@@ -12,37 +12,37 @@
 
     
     <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="First"/>
-<meta name="twitter:description" content="&rsquo;&rsquo;&#39; https://github.com/gohugoio/hugo/releases &rsquo;&rsquo;&#39; �������°�
-hugo�����û�������
-����D:\Hugo\Blog��
-���ɲ��͸�Ŀ¼ &rsquo;&rsquo;&#39; hugo new site myblog &rsquo;&#39;&#39;
-���ز���������
-����git����clone git�����û�������
-��D:\Hugo\Blog\myblog�� &rsquo;&rsquo;&#39; git clone https://github.com/vaga/hugo-theme-m10c.git themes/m10c &rsquo;&#39;&#39;
-�ڸ�Ŀ¼�°Ѳ����ڱ����������� &rsquo;&rsquo;&#39; hugo server -t m10c &ndash;buildDrafts &rsquo;&#39;&#39;
-�½�һƪ����(��content/post�������½�) &rsquo;&rsquo;&#39; hugo new post/blog.md &rsquo;&#39;&#39;
-new repository�½�repository�ֿ�
-������GitHub��������
-&rsquo;&rsquo;&#39; hugo &ndash;theme=m10c &ndash;baseUrl=&ldquo;https://chzhang0.github.io/&quot; &ndash;buildDrafts &rsquo;&rsquo;&#39; ����public�ļ���
-��public�ļ��д���GitHub��������
-&rsquo;&rsquo;&#39; cd public &rsquo;&rsquo;&#39; &rsquo;&rsquo;&#39; git init &rsquo;&rsquo;&#39; ���ж������ϴ� &rsquo;&rsquo;&#39; git add . &rsquo;&rsquo;&#39; �ύ��Ϣ &rsquo;&rsquo;&#39; git commit -m &ldquo;�ҵ� hugo ���͵�һ���ύ&rdquo; &rsquo;&#39;&#39;"/>
+<meta name="twitter:title" content="windows下配置hugo"/>
+<meta name="twitter:description" content="&rsquo;&rsquo;&#39; https://github.com/gohugoio/hugo/releases &rsquo;&rsquo;&#39; 下载最新版
+hugo需配置环境变量
+进入D:\Hugo\Blog下
+生成博客根目录 &rsquo;&rsquo;&#39; hugo new site myblog &rsquo;&#39;&#39;
+下载并设置主题
+利用git进行clone git需配置环境变量
+在D:\Hugo\Blog\myblog下 &rsquo;&rsquo;&#39; git clone https://github.com/vaga/hugo-theme-m10c.git themes/m10c &rsquo;&#39;&#39;
+在根目录下把博客在本地启动起来 &rsquo;&rsquo;&#39; hugo server -t m10c &ndash;buildDrafts &rsquo;&#39;&#39;
+新建一篇文章(在content/post分类下新建) &rsquo;&rsquo;&#39; hugo new post/blog.md &rsquo;&#39;&#39;
+new repository新建repository仓库
+部署至GitHub服务器上
+&rsquo;&rsquo;&#39; hugo &ndash;theme=m10c &ndash;baseUrl=&ldquo;https://chzhang0.github.io/&quot; &ndash;buildDrafts &rsquo;&rsquo;&#39; 生成public文件夹
+将public文件夹传至GitHub服务器上
+&rsquo;&rsquo;&#39; cd public &rsquo;&rsquo;&#39; &rsquo;&rsquo;&#39; git init &rsquo;&rsquo;&#39; 所有东西均上传 &rsquo;&rsquo;&#39; git add . &rsquo;&rsquo;&#39; 提交信息 &rsquo;&rsquo;&#39; git commit -m &ldquo;我的 hugo 博客第一次提交&rdquo; &rsquo;&#39;&#39;"/>
 
-    <meta property="og:title" content="First" />
-<meta property="og:description" content="&rsquo;&rsquo;&#39; https://github.com/gohugoio/hugo/releases &rsquo;&rsquo;&#39; �������°�
-hugo�����û�������
-����D:\Hugo\Blog��
-���ɲ��͸�Ŀ¼ &rsquo;&rsquo;&#39; hugo new site myblog &rsquo;&#39;&#39;
-���ز���������
-����git����clone git�����û�������
-��D:\Hugo\Blog\myblog�� &rsquo;&rsquo;&#39; git clone https://github.com/vaga/hugo-theme-m10c.git themes/m10c &rsquo;&#39;&#39;
-�ڸ�Ŀ¼�°Ѳ����ڱ����������� &rsquo;&rsquo;&#39; hugo server -t m10c &ndash;buildDrafts &rsquo;&#39;&#39;
-�½�һƪ����(��content/post�������½�) &rsquo;&rsquo;&#39; hugo new post/blog.md &rsquo;&#39;&#39;
-new repository�½�repository�ֿ�
-������GitHub��������
-&rsquo;&rsquo;&#39; hugo &ndash;theme=m10c &ndash;baseUrl=&ldquo;https://chzhang0.github.io/&quot; &ndash;buildDrafts &rsquo;&rsquo;&#39; ����public�ļ���
-��public�ļ��д���GitHub��������
-&rsquo;&rsquo;&#39; cd public &rsquo;&rsquo;&#39; &rsquo;&rsquo;&#39; git init &rsquo;&rsquo;&#39; ���ж������ϴ� &rsquo;&rsquo;&#39; git add . &rsquo;&rsquo;&#39; �ύ��Ϣ &rsquo;&rsquo;&#39; git commit -m &ldquo;�ҵ� hugo ���͵�һ���ύ&rdquo; &rsquo;&#39;&#39;" />
+    <meta property="og:title" content="windows下配置hugo" />
+<meta property="og:description" content="&rsquo;&rsquo;&#39; https://github.com/gohugoio/hugo/releases &rsquo;&rsquo;&#39; 下载最新版
+hugo需配置环境变量
+进入D:\Hugo\Blog下
+生成博客根目录 &rsquo;&rsquo;&#39; hugo new site myblog &rsquo;&#39;&#39;
+下载并设置主题
+利用git进行clone git需配置环境变量
+在D:\Hugo\Blog\myblog下 &rsquo;&rsquo;&#39; git clone https://github.com/vaga/hugo-theme-m10c.git themes/m10c &rsquo;&#39;&#39;
+在根目录下把博客在本地启动起来 &rsquo;&rsquo;&#39; hugo server -t m10c &ndash;buildDrafts &rsquo;&#39;&#39;
+新建一篇文章(在content/post分类下新建) &rsquo;&rsquo;&#39; hugo new post/blog.md &rsquo;&#39;&#39;
+new repository新建repository仓库
+部署至GitHub服务器上
+&rsquo;&rsquo;&#39; hugo &ndash;theme=m10c &ndash;baseUrl=&ldquo;https://chzhang0.github.io/&quot; &ndash;buildDrafts &rsquo;&rsquo;&#39; 生成public文件夹
+将public文件夹传至GitHub服务器上
+&rsquo;&rsquo;&#39; cd public &rsquo;&rsquo;&#39; &rsquo;&rsquo;&#39; git init &rsquo;&rsquo;&#39; 所有东西均上传 &rsquo;&rsquo;&#39; git add . &rsquo;&rsquo;&#39; 提交信息 &rsquo;&rsquo;&#39; git commit -m &ldquo;我的 hugo 博客第一次提交&rdquo; &rsquo;&#39;&#39;" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://chzhang0.github.io/post/first/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2022-05-06T20:14:15+08:00" />
@@ -61,7 +61,7 @@ new repository�½�repository�ֿ�
       
   <article class="post">
     <header class="post-header">
-      <h1 class ="post-title">First</h1>
+      <h1 class ="post-title">windows下配置hugo</h1>
       <div class="post-meta">
         <div>
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
@@ -83,70 +83,70 @@ new repository�½�repository�ֿ�
       <p>&rsquo;&rsquo;'
 <a href="https://github.com/gohugoio/hugo/releases">https://github.com/gohugoio/hugo/releases</a>
 &rsquo;&rsquo;'
-�������°�</p>
-<p>hugo�����û�������</p>
-<p>����D:\Hugo\Blog��</p>
-<p>���ɲ��͸�Ŀ¼
+下载最新版</p>
+<p>hugo需配置环境变量</p>
+<p>进入D:\Hugo\Blog下</p>
+<p>生成博客根目录
 &rsquo;&rsquo;'
 hugo new site myblog
 &rsquo;''</p>
-<p>���ز���������</p>
-<p>����git����clone
-git�����û�������</p>
-<p>��D:\Hugo\Blog\myblog��
+<p>下载并设置主题</p>
+<p>利用git进行clone
+git需配置环境变量</p>
+<p>在D:\Hugo\Blog\myblog下
 &rsquo;&rsquo;'
 git clone <a href="https://github.com/vaga/hugo-theme-m10c.git">https://github.com/vaga/hugo-theme-m10c.git</a> themes/m10c
 &rsquo;''</p>
-<p>�ڸ�Ŀ¼�°Ѳ����ڱ�����������
+<p>在根目录下把博客在本地启动起来
 &rsquo;&rsquo;'
 hugo server -t m10c &ndash;buildDrafts
 &rsquo;''</p>
-<p>�½�һƪ����(��content/post�������½�)
+<p>新建一篇文章(在content/post分类下新建)
 &rsquo;&rsquo;'
 hugo new post/blog.md
 &rsquo;''</p>
-<p>new repository�½�repository�ֿ�</p>
-<p>������GitHub��������</p>
+<p>new repository新建repository仓库</p>
+<p>部署至GitHub服务器上</p>
 <p>&rsquo;&rsquo;'
 hugo &ndash;theme=m10c &ndash;baseUrl=&ldquo;<a href="https://chzhang0.github.io/%22">https://chzhang0.github.io/&quot;</a> &ndash;buildDrafts
 &rsquo;&rsquo;'
-����public�ļ���</p>
-<p>��public�ļ��д���GitHub��������</p>
+生成public文件夹</p>
+<p>将public文件夹传至GitHub服务器上</p>
 <p>&rsquo;&rsquo;'
 cd public
 &rsquo;&rsquo;'
 &rsquo;&rsquo;'
 git init
 &rsquo;&rsquo;'
-���ж������ϴ�
+所有东西均上传
 &rsquo;&rsquo;'
 git add .
 &rsquo;&rsquo;'
-�ύ��Ϣ
+提交信息
 &rsquo;&rsquo;'
-git commit -m &ldquo;�ҵ� hugo ���͵�һ���ύ&rdquo;
+git commit -m &ldquo;我的 hugo 博客第一次提交&rdquo;
 &rsquo;''</p>
-<p>�����ص�public�ļ��и�GitHub�ֿ���й���
+<p>将本地的public文件夹跟GitHub仓库进行关联
 &rsquo;&rsquo;'
 git remote add origin <a href="https://github.com/CHZhang0/chzhang0.github.io.git">https://github.com/CHZhang0/chzhang0.github.io.git</a>
 &rsquo;''</p>
-<p>��pubic�Ƶ��ֿ���ȥ
+<p>将pubic推到仓库上去
 &rsquo;&rsquo;'
 git push -u origin master
 &rsquo;&rsquo;'
 &rsquo;&rsquo;'
 Github token: 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
 &rsquo;''</p>
-<p>�޸�������Ŀ��url
+<p>修改现有项目的url
 &rsquo;&rsquo;'
 git remote set-url origin <a href="https://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@github.com/chZhang0/chzhang0.github.io.git">https://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@github.com/chZhang0/chzhang0.github.io.git</a>
 &rsquo;&rsquo;'
 &rsquo;&rsquo;'
 git push -u origin master
 &rsquo;''</p>
-<h1 id="δõ">��δ�õ�</h1>
+<h1 id="暂未用到">暂未用到</h1>
 <p>&rsquo;&rsquo;'
-git pull origin master &ndash;allow-unrelated-histories(�ҵڶ��λ������ʱ���������)</p>
+git pull origin master &ndash;allow-unrelated-histories(我第二次换主题的时候用了这个)</p>
 <p>git push -u origin master
 &rsquo;''</p>
 
